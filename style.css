@@ -151,12 +151,13 @@ footer figure {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 18px;
+    font-style: italic;
 }
 
 .pcontenedor {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     gap: 15px;
@@ -191,7 +192,29 @@ footer figure {
 
 
 
-@media (min-width: 700px) {
-    
-       
+@media (min-width: 768px) {
+
+    .pcontenedor {
+        flex-direction: row;
+    }
+
+    .pdesc {
+        width: 550px;
+    }
+
+    .cajatec {
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pdesc {
+        width: 750px;
+    }
+    .cajatec {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
 }
